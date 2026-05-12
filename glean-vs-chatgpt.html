@@ -4,139 +4,115 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glean vs ChatGPT in 2026: Enterprise Search vs General AI | Profit Pilot</title>
-<meta name="description" content="Glean searches your company's data. ChatGPT knows everything else. Here's when to use which.">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  :root{--navy:#0D1B2A;--teal:#0A7EA4;--offwhite:#F9FAFB;--gray:#6B7280;--light:#E5E7EB}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--offwhite);color:var(--navy)}
-  a{text-decoration:none;color:inherit}
-  nav{background:var(--navy);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100}
-  .logo{font-size:20px;font-weight:800;letter-spacing:-0.5px}
-  .logo span:first-child{color:#fff}
-  .logo span:last-child{color:var(--teal)}
-  nav a.nav-link{color:#fff;font-size:14px;opacity:0.75;margin-left:24px}
-  .article-wrap{max-width:680px;margin:0 auto;padding:48px 24px 80px}
-  .article-tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:12px}
-  h1{font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.15;margin-bottom:16px}
-  .subtitle{font-size:clamp(16px,2vw,20px);color:var(--gray);font-weight:400;margin-bottom:32px;line-height:1.4}
-  .disclaimer{font-size:13px;color:var(--gray);font-style:italic;border-left:3px solid var(--teal);padding:10px 14px;margin-bottom:32px;background:#fff;border-radius:0 8px 8px 0}
-  .article-wrap h2{font-size:clamp(20px,3vw,26px);font-weight:800;margin:40px 0 14px}
-  .article-wrap p{font-size:16px;line-height:1.75;color:#1a2535;margin-bottom:16px}
-  .article-wrap ul{padding-left:20px;margin-bottom:16px}
-  .article-wrap ul li{font-size:16px;line-height:1.75;margin-bottom:6px}
-  .verdict-box{background:var(--navy);color:#fff;border-radius:12px;padding:24px 28px;margin:32px 0;font-size:17px;line-height:1.6;font-weight:500}
-  .verdict-box strong{color:var(--teal)}
-  hr{border:none;border-top:2px solid var(--light);margin:36px 0}
-  table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:15px}
-  th{background:var(--navy);color:#fff;padding:12px 14px;text-align:left;font-weight:600}
-  td{padding:11px 14px;border-bottom:1px solid var(--light)}
-  tr:nth-child(even) td{background:#fff}
-  tr:nth-child(odd) td{background:#f3f4f6}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0}
-  .btn{display:inline-block;padding:13px 24px;border-radius:8px;font-size:15px;font-weight:700;transition:opacity 0.2s}
-  .btn-primary{background:var(--teal);color:#fff}
-  .btn-secondary{background:var(--navy);color:#fff}
-  .btn:hover{opacity:0.85}
-  footer{background:var(--navy);color:#fff;text-align:center;padding:32px 24px;font-size:13px;opacity:0.8}
-  @media(max-width:600px){.article-wrap{padding:32px 16px 64px}.cta-row{flex-direction:column}.btn{text-align:center}}
-</style>
+<meta name="description" content="Glean searches your company's internal data. ChatGPT knows everything else. Here's when you need which — and why most companies get this wrong.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav>
-  <a href="index.html" class="logo"><span>PROFIT</span><span>PILOT</span></a>
-  <div><a href="index.html" class="nav-link">← Back</a></div>
-</nav>
-<div class="article-wrap">
-  <div class="article-tag">Enterprise AI</div>
-  <h1>Glean vs ChatGPT in 2026: Enterprise Search vs General AI</h1>
-  <div class="subtitle">Glean searches your company's data. ChatGPT knows everything else. Here's when to use which.</div>
-  <div class="disclaimer">Heads up: some links in this article are affiliate links. If you sign up through them, I may earn a small commission — at no extra cost to you. I only recommend tools I've actually used.</div>
-  <hr>
-
-  <h2>🤔 Why Are We Even Comparing These?</h2>
-  <p>At first glance, Glean and ChatGPT seem like totally different tools. One searches your internal company data. The other is a general-purpose AI assistant.</p>
-  <p>But in practice, both are answering the same question employees ask every day: <em>"Where is that information and what does it mean?"</em></p>
-  <p>If you're evaluating AI tools for your team or business, understanding where each one fits is critical — because buying the wrong one wastes both money and adoption effort.</p>
-
-  <hr>
-
-  <h2>⚡ The 30-Second Verdict</h2>
-  <div class="verdict-box">
-    <strong>Glean</strong> = finds answers inside your company (Slack, Drive, Notion, emails).<br><br>
-    <strong>ChatGPT</strong> = answers everything outside your company.<br><br>
-    Smart companies use both. They solve different problems.
+  <a href="index.html" class="logo">PROFIT<span>PILOT</span></a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">← All Reviews</a>
+    <a href="quiz.html" class="nav-pill">Find My Tool →</a>
   </div>
+</nav>
 
-  <hr>
-
-  <h2>📊 Side-by-Side Breakdown</h2>
-  <table>
-    <tr><th></th><th>🟣 Glean</th><th>🟢 ChatGPT</th></tr>
-    <tr><td>Best for</td><td>Internal knowledge search</td><td>General AI tasks</td></tr>
-    <tr><td>Data source</td><td>Your company's tools</td><td>Public internet + training</td></tr>
-    <tr><td>Pricing</td><td>Enterprise (custom)</td><td>$20/mo or API</td></tr>
-    <tr><td>Setup</td><td>Weeks (IT integration)</td><td>Minutes</td></tr>
-    <tr><td>Privacy</td><td>✅ Private, internal only</td><td>⚠️ Data sent to OpenAI</td></tr>
-    <tr><td>Content creation</td><td>❌</td><td>✅ Excellent</td></tr>
-    <tr><td>Code writing</td><td>❌</td><td>✅ Excellent</td></tr>
-    <tr><td>Finds internal docs</td><td>✅ That's its whole job</td><td>❌</td></tr>
-    <tr><td>Integrations</td><td>100+ (Slack, Drive, Jira…)</td><td>Plugin ecosystem</td></tr>
-  </table>
-
-  <hr>
-
-  <h2>🟣 Where Glean Wins</h2>
-  <p>Glean is purpose-built for one thing: finding information that lives inside your organisation. Slack messages, Google Drive docs, Confluence pages, Jira tickets, emails — Glean indexes all of it and lets anyone search across everything at once.</p>
-  <p>For large teams drowning in internal knowledge, this is genuinely transformative. No more "does anyone know where that doc lives?" in Slack. No more asking three people to find a policy that was written two years ago.</p>
-  <ul>
-    <li>Searches across all your company's connected tools simultaneously</li>
-    <li>Surfaces relevant docs, messages, and files you didn't know existed</li>
-    <li>Keeps all data private and internal — nothing leaves your org</li>
-    <li>Builds a knowledge graph of your company over time</li>
-  </ul>
-
-  <hr>
-
-  <h2>🟢 Where ChatGPT Wins</h2>
-  <p>ChatGPT wins everywhere Glean doesn't play. Writing, coding, analysis, brainstorming, research, summarisation — ChatGPT is the Swiss Army knife for getting actual work done.</p>
-  <p>It's also dramatically cheaper and faster to deploy. No IT team needed, no integration project, no enterprise contract. Sign up, start working.</p>
-  <ul>
-    <li>Content creation, copywriting, and editing</li>
-    <li>Code writing and debugging</li>
-    <li>Research and summarisation of public information</li>
-    <li>Brainstorming and ideation</li>
-    <li>Available to individuals, not just enterprises</li>
-  </ul>
-
-  <hr>
-
-  <h2>🎯 Which One Should YOU Use?</h2>
-  <p>Use <strong>Glean</strong> if you're at a company with 50+ employees, scattered knowledge across many tools, and a real problem finding internal information. It's an enterprise buy — you'll need IT involvement and budget approval.</p>
-  <p>Use <strong>ChatGPT</strong> if you need an AI assistant for actual work tasks — writing, coding, analysis, research. Works for individuals and teams alike, no setup required.</p>
-  <p>If you're a solo creator or small team: ChatGPT (or Claude) is all you need. Glean is overkill until you're drowning in internal docs.</p>
-
-  <hr>
-
-  <h2>💰 What Does It Cost?</h2>
-  <table>
-    <tr><th></th><th>Pricing</th><th>Who it's for</th></tr>
-    <tr><td>🟣 Glean</td><td>Custom enterprise pricing</td><td>Mid-to-large companies</td></tr>
-    <tr><td>🟢 ChatGPT</td><td>Free / $20 per month</td><td>Everyone</td></tr>
-  </table>
-  <p>Glean doesn't publish pricing — expect $10–$20 per user per month at enterprise scale. ChatGPT is accessible to anyone.</p>
-
-  <hr>
-
-  <h2>🏁 The Bottom Line</h2>
-  <p>These tools aren't really competitors — they're complements. Glean finds what your company already knows. ChatGPT helps you do something with that knowledge.</p>
-  <p>The best-run teams in 2026 use both. The question is which one you actually need right now.</p>
-  <p>👇 Which AI tools is your team running? Hit reply — I read everything.</p>
-
-  <div class="cta-row">
-    <a href="https://www.glean.com" class="btn btn-primary" target="_blank">Learn About Glean →</a>
-    <a href="https://chat.openai.com" class="btn btn-secondary" target="_blank">Try ChatGPT Free →</a>
+<div class="article-hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Enterprise AI · Comparison</div>
+    <h1 class="article-title">Glean vs ChatGPT:<br><em>Two Different Problems, Two Different Tools</em></h1>
+    <p class="hero-sub">Most comparisons treat these as competitors. They're not. Understanding why is the key to buying the right one — and not wasting money on the wrong one.</p>
+    <div class="hero-meta">
+      <span class="meta-item">6 min read</span>
+      <span class="meta-item">Updated May 2026</span>
+      <span class="meta-item">Enterprise focus</span>
+    </div>
   </div>
 </div>
-<footer>© 2026 ProfitPilot · Honest AI tool reviews for creators</footer>
+
+<div class="wrap">
+  <div class="disclaimer">Some links here are affiliate links. If you sign up through them I earn a small commission at no extra cost to you.</div>
+
+  <p class="lead">The question I keep seeing in enterprise AI discussions is "should we use Glean or ChatGPT?" It's the wrong question. It's a bit like asking whether you should use Google Maps or a calculator. They do different things. The right question is what problem you're actually trying to solve.</p>
+
+  <p>Let me lay out what each one actually does — and more importantly, what each one can't do.</p>
+
+  <hr>
+
+  <h2>What Glean actually is</h2>
+
+  <p>Glean is a workplace search and knowledge tool. Its entire job is to help people inside a company find information that already exists inside that company — across Slack, Google Drive, Confluence, Jira, email, Notion, and 100+ other tools your org probably uses.</p>
+
+  <p>The problem it solves is real and expensive. In most companies over 50 people, a significant amount of working time is spent looking for things. Asking someone where a document is. Searching through Slack history. Re-writing something that was already written six months ago because nobody could find the original. Glean indexes all of it and makes it searchable in plain English.</p>
+
+  <p>What Glean doesn't do: create content, answer general questions, write code, or tell you anything about the world outside your organisation's data. It only knows what your company knows.</p>
+
+  <div class="pull-quote">
+    <p>"Glean is for finding what your company already knows. ChatGPT is for generating things your company doesn't know yet."</p>
+  </div>
+
+  <hr>
+
+  <h2>What ChatGPT actually is</h2>
+
+  <p>ChatGPT is a general-purpose AI assistant. It knows an enormous amount about the world — from how to write Python to the history of Renaissance art to how to structure a sales email. It can generate content, answer questions, analyse data, write and debug code, and have genuinely useful conversations about almost any topic.</p>
+
+  <p>What ChatGPT doesn't do: access your internal company data. It knows nothing about your Slack messages, your internal docs, your customer data, your processes. Ask it "what did we decide in the Q3 planning meeting?" and it has absolutely no idea.</p>
+
+  <hr>
+
+  <h2>The comparison, honestly</h2>
+
+  <table>
+    <thead><tr><th></th><th>Glean</th><th>ChatGPT</th></tr></thead>
+    <tr><td>Best for</td><td>Finding internal knowledge</td><td>General AI tasks</td></tr>
+    <tr><td>Data source</td><td>Your company's tools</td><td>Public internet + training</td></tr>
+    <tr><td>Pricing</td><td>Enterprise (custom quote)</td><td>Free / $20/mo</td></tr>
+    <tr><td>Setup time</td><td>Weeks (IT integration)</td><td>Minutes</td></tr>
+    <tr><td>Data privacy</td><td>Private — stays internal</td><td>Sent to OpenAI</td></tr>
+    <tr><td>Content creation</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Finds internal docs</td><td>Yes — that's its job</td><td>No</td></tr>
+    <tr><td>Who needs it</td><td>Teams 50+</td><td>Everyone</td></tr>
+  </table>
+
+  <hr>
+
+  <h2>Who actually needs Glean</h2>
+
+  <p>The honest answer is: companies above a certain size where internal knowledge is genuinely scattered and hard to find. If you have fewer than 30 people and everyone basically knows where everything is, Glean is overkill.</p>
+
+  <p>If you're at a 200-person company where new hires spend their first month asking where things are, where the same questions get answered in Slack over and over, where people re-do work because they couldn't find the original — Glean pays for itself quickly. The ROI calculation is how many hours per employee per week are currently lost searching for information. At enterprise scale, it's usually more than people think.</p>
+
+  <div class="hot-take">
+    <div class="hot-take-label">// The trap to avoid</div>
+    <p>Companies sometimes buy Glean hoping it'll replace ChatGPT — or buy ChatGPT assuming it covers internal search. Neither works. They solve genuinely different problems and the best-run teams use both.</p>
+  </div>
+
+  <hr>
+
+  <h2>For everyone else</h2>
+
+  <p>If you're a solo creator, freelancer, or small team, this comparison probably doesn't apply to you yet. ChatGPT (or Claude) is what you need. Glean is an enterprise product with enterprise pricing and enterprise setup requirements.</p>
+
+  <p>Save this article for when your team gets big enough that "where is that doc?" becomes a recurring problem. That's the signal.</p>
+
+  <div class="verdict">
+    <div class="verdict-label">// The Verdict</div>
+    <p>
+      <strong>Glean</strong> — enterprise teams drowning in internal knowledge they can't find.<br><br>
+      <strong>ChatGPT</strong> — everyone, for general AI work, content, code, research.<br><br>
+      <strong>Best teams use both.</strong> They solve different problems and don't overlap.
+    </p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Not sure which AI tool fits your workflow?</h3>
+    <p>Take the 60-second quiz and get a personalised recommendation.</p>
+    <div class="cta-btns">
+      <a href="quiz.html" class="btn-white">Take the Quiz →</a>
+      <a href="https://chat.openai.com" class="btn-dark" target="_blank">Try ChatGPT Free →</a>
+    </div>
+  </div>
+</div>
+<footer>© 2026 ProfitPilot · Independent AI reviews · Some links earn us a commission</footer>
 </body>
 </html>
