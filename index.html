@@ -6,6 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profit Pilot — Tech · Finance · Politics</title>
 <meta name="description" content="Independent analysis on technology, finance, and global politics. Daily blog posts and in-depth articles, built for people who want to understand what's actually happening.">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://profitpilot2026.github.io/">
+<meta property="og:title" content="Profit Pilot — Tech · Finance · Politics">
+<meta property="og:description" content="Independent analysis on technology, finance, and global politics. Daily posts and in-depth articles, without the spin.">
+<meta property="og:image" content="https://profitpilot2026.github.io/og-image.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Profit Pilot — Tech · Finance · Politics">
+<meta name="twitter:description" content="Independent analysis on technology, finance, and global politics. Daily posts and in-depth articles, without the spin.">
+<meta name="twitter:image" content="https://profitpilot2026.github.io/og-image.png">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
@@ -207,31 +220,31 @@
   </div>
   <div class="blog-grid" id="blog-preview">
     <!-- Placeholder cards — replace with real posts -->
-    <a href="blog.html" class="blog-card">
+    <a href="openai-business-model.html" class="blog-card">
       <div class="blog-card-cat cat-tech">Technology</div>
       <div class="blog-card-title">OpenAI's New Model Is Impressive. The Business Model Is the Real Story.</div>
       <div class="blog-card-excerpt">Everyone's talking about what it can do. Nobody's asking who's paying for it and why that matters.</div>
       <div class="blog-card-foot">
         <span class="blog-card-read">Read post →</span>
-        <span class="blog-card-date">Today</span>
+        <span class="blog-card-date">May 13, 2026</span>
       </div>
     </a>
-    <a href="blog.html" class="blog-card">
+    <a href="fed-wait-and-see.html" class="blog-card">
       <div class="blog-card-cat cat-finance">Finance</div>
       <div class="blog-card-title">Why the Fed's "Wait and See" Approach Is Starting to Worry Markets</div>
       <div class="blog-card-excerpt">Patience is a virtue until it starts looking like paralysis. Here's what the bond market is pricing in.</div>
       <div class="blog-card-foot">
         <span class="blog-card-read">Read post →</span>
-        <span class="blog-card-date">Today</span>
+        <span class="blog-card-date">May 13, 2026</span>
       </div>
     </a>
-    <a href="blog.html" class="blog-card">
+    <a href="southeast-asia-realignment.html" class="blog-card">
       <div class="blog-card-cat cat-politics">Global Politics</div>
       <div class="blog-card-title">The Quiet Realignment Nobody Is Covering in Southeast Asia</div>
       <div class="blog-card-excerpt">Three countries shifted their trade allegiances in the past 90 days. The Western press barely noticed.</div>
       <div class="blog-card-foot">
         <span class="blog-card-read">Read post →</span>
-        <span class="blog-card-date">Today</span>
+        <span class="blog-card-date">May 13, 2026</span>
       </div>
     </a>
   </div>
@@ -287,14 +300,13 @@
     <div class="email-eyebrow">// Daily Briefing</div>
     <h2>The briefing. Every morning.<br><span>Free.</span></h2>
     <p>Tech, finance, and politics — the three stories that matter today, in under five minutes. No filler.</p>
-    <form onsubmit="handleSub(event)">
+    <form action="https://profitpilotco.beehiiv.com/subscribe" method="POST" target="_blank">
       <div class="form-row">
-        <input type="email" id="em" placeholder="your@email.com" required>
+        <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit" class="btn-sub">Subscribe →</button>
       </div>
     </form>
     <div class="form-note">No spam. Unsubscribe anytime.</div>
-    <div class="success" id="succ">🎉 You're in. Check your inbox.</div>
   </div>
 
 </div>
@@ -327,17 +339,8 @@
       <a href="#">Facebook</a>
     </div>
   </div>
-  <div class="footer-copy">© 2026 ProfitPilot · Independent · Some links earn us a commission</div>
+  <div class="footer-copy">© 2026 ProfitPilot · Independent · <a href="about.html" style="color:inherit">About</a> · <a href="privacy.html" style="color:inherit">Privacy</a> · <a href="disclosure.html" style="color:inherit">Disclosure</a> · Some links earn us a commission</div>
 </div>
 
-<script>
-function handleSub(e){
-  e.preventDefault();
-  const em=document.getElementById('em').value;
-  window.open('https://profitpilotco.beehiiv.com/subscribe?email='+encodeURIComponent(em),'_blank');
-  document.getElementById('succ').style.display='block';
-  document.getElementById('em').value='';
-}
-</script>
 </body>
 </html>
